@@ -1,10 +1,10 @@
-const fixtures = require("./tests/fixtures");
+const fixtures = require('./tests/fixtures');
 
 beforeAll(async () => {
-  await fixtures.reset()
+  await fixtures.reset();
 });
 beforeEach(async () => {
-  await fixtures.reset()
+  await fixtures.reset();
 });
 //afterAll(async () => {
 //  await fixtures.clear();

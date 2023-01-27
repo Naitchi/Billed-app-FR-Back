@@ -6,8 +6,8 @@
   "author": "techer jean sebastien <techerjeansebastien.pro@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "NODE_ENV=test sequelize-cli db:migrate && jest test -i tests/user.test.js --watch",
-    "run:dev": "NODE_ENV=development sequelize-cli db:migrate && node server.js",
+    "test": "sequelize-cli db:migrate && jest test -i tests/user.test.js --watch",
+    "dev": "sequelize-cli db:migrate && node server.js",
     "lint": "eslint ./"
   },
   "dependencies": {
@@ -19,7 +19,7 @@
     "multer": "^1.4.3",
     "sequelize": "^6.9.0",
     "short-uuid": "^4.2.0",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.1.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
